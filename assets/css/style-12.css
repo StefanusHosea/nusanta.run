@@ -107,7 +107,7 @@ h3{font-size: 1.25em;font-weight: normal}
    max-width: 300px;
    width: 100%;
    transition: all .5s ease;
-   margin-top: 3em
+   margin-top: 2.2em
 }
 .logo:hover{
    opacity: .75
@@ -147,6 +147,11 @@ h3{font-size: 1.25em;font-weight: normal}
 
 .footer a {
     text-decoration:none;
+}
+.supports img{
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 2em;
 }
 .support{padding-bottom:1em; border-bottom: solid 1px #f5e2cd;margin-bottom:1em}
 .support p{margin-bottom: 1em}
