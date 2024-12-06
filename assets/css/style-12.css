@@ -157,10 +157,11 @@ h3{font-size: 1.25em;font-weight: normal}
 #links+#half{margin-bottom:.5em}
 #half{display: flex}
 #half .link{width: 50%;margin-right: 15px}
-#half .link:last-child{border-radius: 0 0 0 20px;margin-right: 0}
-#half .link:first-child{border-radius: 0 20px 0 0}
+#half .link:last-child{border-radius: 0 20px 0 0;margin-right: 0}
+#half .link:first-child{border-radius: 0 0 0 20px}
 
 @media screen and (max-width 600px) {
    body .link{font-size: .75rem}
-    #half .link span{display:none}
+   body #half .link {font-size:90%}
+   body #half .link span{font-size:80%}
 }
