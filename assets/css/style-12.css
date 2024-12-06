@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Lydian';
+    src: url('../fonts/lydian.woff2') format('woff2'),
+         url('../fonts/lydian.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lydian';
+    src: url('../fonts/lydian-bold.woff2') format('woff2'),
+         url('../fonts/lydian-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+      width:100%;
+      margin: 0;
+      font-family: 'Lydian', sans-serif;
+      color:#f5e2cd;
+      background-color: #ce300b;
+      background-image: url('../images/12_bg.jpg');
+      background-position: bottom;
+      background-attachment: fixed;
+      background-size:cover;
+      background-repeat: no-repeat;
+      animation: fadein 2s;
+      -webkit-animaton: fadein 2s;
+      -moz-animation: fadein 2s;
+}
+.container {
+          width: 100%;
+          position: absolute;
+          text-align: center;
+          padding: 2em 0;
+        }
+.vertical {
+        border-left: 2px solid white;
+        height: 35px;
+        position: relative;
+        left: 50%;
+        margin: .5em 0;
+    }
+*{scroll-behavior: smooth;}
+img{transition: all .5s}
+img{user-drag: none; user-select: none;-moz-user-select: none;-webkit-user-drag: none;-webkit-user-select: none;-ms-user-select: none;}
+::-moz-selection {
+        background-color: transparent;
+        color: #f5e2cd;
+        text-shadow: none;
+    }
+::selection {
+        background-color: transparent;
+        color: #f5e2cd;
+        text-shadow: none;
+    }
+a {
+      color: #f5e2cd;
+    }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes boing {
+      0% {}
+      50% {background-color: #f5e2cd;}
+      100% {}
+      }
+@-moz-keyframes boing {
+      0% {}
+      50% {background-color: #f5e2cd;}
+      100% {}
+      }
+@keyframes boing {
+      0% {}
+      50% {background-color: #f5e2cd;}
+      100% {}
+      }
+
+.nr{
+    max-width: 500px;
+    padding: 0 2em;
+    margin: auto;
+    text-align: center;
+}
+h1,h2,h3{margin: 0}
+h1{font-size: 5em;font-weight: normal;line-height: 1}
+h2{font-size: 1.75em;}
+h3{font-size: 1.25em;font-weight: normal}
+@media(max-width:700px){h1{font-size: 15vw} h2{font-size:25px}}
+.social{margin: 0 .25em;transition: all .5s}
+.social:hover{color:#fff}
+#links {
+    margin: 1.5em auto;
+}
+.logo{
+   max-width: 300px;
+   width: 100%;
+   transition: all .5s ease;
+   margin-top: 3em
+}
+.logo:hover{
+   opacity: .75
+}
+.link {
+    display: block;
+    background-color: rgba(255,255,255,.75);
+    border:solid 2px #f5e2cd;
+    color: #ce300b;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s ease;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+}
+.link:first-child{border-radius: 0 20px 0 0;}
+.link:last-child{border-radius: 0 0 0 20px;}
+.link span{font-size:.85rem}
+.link:hover {
+    background-color: #f5e2cd;
+    color: #ce920b;
+    border-color: #ce920b;
+    box-shadow:0px 8px 25px #b12909;
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
+}
+.now{-webkit-animation: boing 1s ease infinite;
+    -moz-animation: boing 1s ease infinite;
+    animation: boing 1s ease infinite;}
+.footer {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.footer a {
+    text-decoration:none;
+}
+.support{padding-bottom:1em; border-bottom: solid 1px #f5e2cd;margin-bottom:1em}
+.support p{margin-bottom: 1em}
+.support img:hover{transform: scale(.9)}
+.support img{height: 100%;max-height: 25px;margin:0 .25em}
+.copyright{font-size: 15px;padding-top: 1em;margin-top: 1em;border-top: solid 1px #f5e2cd}
+
+#half{display: flex}
+#half .link{width: 50%;margin-right: 15px}
+#half .link:last-child{border-radius: 0;margin-right: 0}
+#half .link:first-child{border-radius: 0}
+
+@media screen and (max-width 600px) {
+   body .link{font-size: .75rem}
+}
